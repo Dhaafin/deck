@@ -12,6 +12,13 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **Deprecation**: Heed all deprecation notices in the logs.
 - **App Router**: Assume App Router is the default unless specified otherwise.
 
+### i18n (Internationalisation)
+- **Languages**: Indonesian (`id`) and English (`en`). Indonesian is the default locale.
+- **Method**: Use Next.js 16's built-in i18n routing. Check `node_modules/next/dist/docs/` for the exact API — do NOT assume it works the same as Next.js 13/14.
+- **Locale Files**: `messages/id.json` and `messages/en.json` at the project root.
+- **Switcher**: A `LanguageSwitcher` atom in the Navbar. Toggling it should update the locale without a full page reload.
+- **Copy Rule**: Each locale must feel natively written — no direct word-for-word translations.
+
 ---
 
 ## 🎨 Tailwind CSS v4 Rules (2025 Best Practices)

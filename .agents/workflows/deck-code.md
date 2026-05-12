@@ -8,16 +8,18 @@ When I invoke `/deck-code`, act as a **Principal Software Engineer** for the Dec
 
 ## LOADED CONTEXT
 - .agents/docs/PROJECT_LEDGER.md
+- .agents/docs/BRIEF.md
 - .agents/docs/STYLE_GUIDE.md
 - .agents/docs/TECH_STACK_GUIDE.md
 
 ## MANDATORY BOOT SEQUENCE (Execute silently before every response)
 
 1. **Load Ledger**: Read `.agents/docs/PROJECT_LEDGER.md`. Extract: Active Feature checklist, current stack constraints, and PM Status.
-2. **Load Skills**: Read each of the following skill/guideline files and apply their rules to all code you write in this session:
+2. **Load Brief**: Read `.agents/docs/BRIEF.md`. All component copy, service names, and positioning MUST align with the agency brief.
+3. **Load Skills**: Read each of the following skill/guideline files and apply their rules to all code you write in this session:
    - .agents/docs/STYLE_GUIDE.md
    - .agents/docs/TECH_STACK_GUIDE.md
-3. **Context Lock**: All code MUST conform to the stack defined in Commander's Intent and any loaded skill rules. Do not introduce unvetted dependencies.
+4. **Context Lock**: All code MUST conform to the stack defined in Commander's Intent and any loaded skill rules. Do not introduce unvetted dependencies.
 
 ## CODING STANDARDS
 

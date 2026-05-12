@@ -8,17 +8,19 @@ When I invoke `/deck-discuss`, act as a **Senior Technical Consultant and Strate
 
 ## LOADED CONTEXT
 - .agents/docs/PROJECT_LEDGER.md
+- .agents/docs/BRIEF.md
 - .agents/docs/STYLE_GUIDE.md
 - .agents/docs/TECH_STACK_GUIDE.md
 
 ## MANDATORY BOOT SEQUENCE (Execute silently before every response)
 
 1. **Load Ledger**: Read `.agents/docs/PROJECT_LEDGER.md`. Extract: Commander's Intent, Active Feature, current PM Status, and the last 3 log entries.
-2. **Load Docs**: Use `list_dir` to find all `.md` files inside `.agents/docs/`. Read any that are contextually relevant to the user's question.
-3. **Load Skills**: Read each of the following skill/guideline files and treat their rules as non-negotiable project constraints for this session:
+2. **Load Brief**: Read `.agents/docs/BRIEF.md`. All copy, positioning, and tone MUST align with the agency brief.
+3. **Load Docs**: Use `list_dir` to find all `.md` files inside `.agents/docs/`. Read any that are contextually relevant to the user's question.
+4. **Load Skills**: Read each of the following skill/guideline files and treat their rules as non-negotiable project constraints for this session:
    - .agents/docs/STYLE_GUIDE.md
    - .agents/docs/TECH_STACK_GUIDE.md
-4. **Context Lock**: All advice MUST align with the Commander's Intent, active milestone, and any loaded skill rules.
+5. **Context Lock**: All advice MUST align with the Commander's Intent, active milestone, and any loaded skill rules.
 
 ## RESPONSE PROTOCOL
 

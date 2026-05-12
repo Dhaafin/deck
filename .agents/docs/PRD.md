@@ -4,19 +4,33 @@
 The goal of this project is to build a high-conversion "Selling Deck" website for selling web development services. The site must serve as a living demonstration of premium design, technical precision, and performance.
 
 ## 2. Target Audience
-- **High-End Startups**: Founders looking for a tech-forward partner.
-- **Boutique Brands**: Luxury service providers needing a digital upgrade.
-- **Enterprise Leads**: Decision-makers who value performance and security.
+- **Primary**: Indonesian Social-First DTC brands (Fashion, Skincare, Lifestyle) with 50k+ IG/TikTok followers.
+- **Secondary**: Experience-Driven Lifestyle brands (Specialty Coffee, Boutique Cafes, Design Studios).
+- **Language**: Indonesian (primary) + English (secondary). Full i18n language switcher required.
+
+---
+
+## 2.5 Final Section Map & Build Order
+
+| Sprint | Section | Atomic Organisms | Notes |
+| :--- | :--- | :--- | :--- |
+| 1 | **Navbar** | `Logo`, `NavLinks`, `CTAButton` | Glassmorphism, sticky, Framer scroll effect. |
+| 1 | **Hero** | `HeroHeadline`, `HeroSubtext`, `HeroCTA`, `FloatingCard` | 3-second wow. Bold typography + floating element. |
+| 1 | **Value Props** | `StatCard`, `FeatureRow` | Performance score, speed, revision guarantee. |
+| 2 | **The Deck (Carousel)** | `DeckCard`, `DeckCarousel`, `TagBadge` | 3 cards: Atmospheric Microsite, Direct-Conversion Engine, Digital Audit. |
+| 3 | **The Process** | `StepItem`, `ProcessTimeline` | Audit → Design → Build → Launch. Vertical timeline. |
+| 3 | **Request a Quote** | `QuoteForm`, `ProjectTypeSelector`, `SubmitButton` | Scope descriptors, no prices. High-focus layout. |
+| 4 | **Footer** | `FooterLinks`, `FooterBrand`, `SocialLink` | Minimal, clean. |
 
 ## 3. Core Features & Sections (Single Page)
 
 | Section | Content / Goal | Key Design Element |
 | :--- | :--- | :--- |
 | **Hero** | Value Prop: "Precision-Engineered Digital Experiences." | Floating 3D/Glass element, high-contrast typography. |
-| **The Deck (Portfolio)**| Horizontal scroll/slide of website "cards." | Glassmorphism cards with "Live Preview" buttons. |
+| **The Deck (Carousel)** | Freeform carousel of "website type" cards: Agency, Commerce, SaaS, Local, Editorial. Each with a device mockup, tagline, and reveal CTA. | Glassmorphism cards with 3D Framer Motion tilt on hover. Racing Stripe (Blue/Red) accent at top of each card. |
 | **Performance Bench** | Real-time Lighthouse score visualization (100/100). | "Racing" gauge UI with M-Power accents. |
 | **The Process** | Step-by-step: Audit -> Design -> Engineering -> Launch. | Vertical timeline with Carbon Fiber accents. |
-| **Pricing Tiers** | Three packages: Startup, Growth, Enterprise. | Brushed metal gradients on CTA buttons. |
+| **Request a Quote** | No prices shown. Scope descriptors instead ("1–3 pages", "Custom CMS", "Full E-Commerce"). Project type selector + contact form. | Clean, high-focus layout. Framer Motion reveal on form focus. |
 | **Contact / CTA** | Simple lead capture form. | Clean, high-focus layout. |
 
 ## 4. Technical Requirements
@@ -27,6 +41,7 @@ The goal of this project is to build a high-conversion "Selling Deck" website fo
 - **Animations**: Framer Motion (for "Graceful & Floating" motion).
 - **Icons**: Lucide React.
 - **Typography**: Plus Jakarta Sans (via Google Fonts).
+- **i18n**: Next.js built-in i18n routing. Locale files: `messages/id.json` + `messages/en.json`. Language switcher in Navbar.
 
 ### 4.2 Performance Goals
 - **Lighthouse Score**: 100/100/100/100.
