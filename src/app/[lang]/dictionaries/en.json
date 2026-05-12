@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Start a Project"
+  },
+  "hero": {
+    "headline": "Seamless Digital Transitions for Your Brand",
+    "subtext": "We build high-performance digital experiences that capture your social brand's energy — not just another website.",
+    "cta": "See Our Work",
+    "ctaSecondary": "Free Consultation"
+  },
+  "values": {
+    "title": "Why We're Different",
+    "speed": {
+      "stat": "< 1 sec",
+      "label": "Average Load Time",
+      "desc": "Fast websites mean higher conversions. We're obsessive about performance."
+    },
+    "motion": {
+      "stat": "60fps",
+      "label": "Zero-Jank Motion",
+      "desc": "Precision-engineered animations that make interfaces feel alive and premium."
+    },
+    "social": {
+      "stat": "0 Friction",
+      "label": "Social-to-Site",
+      "desc": "Purpose-built for Instagram & TikTok in-app browsers. From swipe up straight to checkout."
+    }
+  }
+}

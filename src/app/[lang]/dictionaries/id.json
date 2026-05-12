@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "services": "Layanan",
+    "process": "Proses",
+    "contact": "Hubungi Kami",
+    "cta": "Mulai Proyek"
+  },
+  "hero": {
+    "headline": "Transisi Digital yang Seamless untuk Brand Anda",
+    "subtext": "Kami membangun pengalaman digital berperforma tinggi yang menangkap energi brand sosial Anda — bukan sekadar website biasa.",
+    "cta": "Lihat Karya Kami",
+    "ctaSecondary": "Konsultasi Gratis"
+  },
+  "values": {
+    "title": "Kenapa Kami Berbeda",
+    "speed": {
+      "stat": "< 1 detik",
+      "label": "Waktu Muat Rata-rata",
+      "desc": "Website yang cepat berarti konversi lebih tinggi. Kami obsesif soal performa."
+    },
+    "motion": {
+      "stat": "60fps",
+      "label": "Motion Tanpa Lag",
+      "desc": "Animasi mulus dengan presisi tinggi yang membuat interface terasa hidup dan premium."
+    },
+    "social": {
+      "stat": "0 Friction",
+      "label": "Social-to-Site",
+      "desc": "Dioptimalkan khusus untuk in-app browser Instagram & TikTok. Dari swipe up langsung ke checkout."
+    }
+  }
+}

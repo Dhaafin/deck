@@ -36,20 +36,20 @@
 
 **Feature**: Sprint 1 — Navbar, Hero, Value Props
 **Checklist**:
-- [ ] Install Framer Motion (`npm install framer-motion`).
-- [ ] Configure Tailwind 4 `@theme` with M-Performance color tokens (OKLCH).
-- [ ] Setup Google Fonts (Plus Jakarta Sans) in `layout.tsx`.
-- [ ] Build `Navbar` organism (Glassmorphism, sticky, Framer scroll effect).
-- [ ] Build `Hero` organism (HeroHeadline, HeroSubtext, HeroCTA, FloatingCard).
-- [ ] Build `ValueProps` organism (StatCards: Lighthouse 100, < 1s load, 3 revisions).
+- [x] Install Framer Motion (`npm install framer-motion`).
+- [x] Configure Tailwind 4 `@theme` with M-Performance color tokens (OKLCH).
+- [x] Setup Google Fonts (Plus Jakarta Sans) in `layout.tsx`.
+- [x] Build `Navbar` organism (Glassmorphism, sticky, Framer scroll effect).
+- [x] Build `Hero` organism (HeroHeadline, HeroSubtext, HeroCTA, FloatingCard).
+- [x] Build `ValueProps` organism (StatCards: Lighthouse 100, < 1s load, 3 revisions).
 
 ---
 
 ## 📓 RESEARCH PARKING LOT
 
 - [ ] Interactive 3D device mockups (Three.js or pure CSS?).
-- [ ] Subtle Carbon Fiber texture implementation.
-- [ ] Glassmorphism navbar styling for Next.js 16.
+- [x] Subtle Carbon Fiber texture implementation → used gradient approach.
+- [x] Glassmorphism navbar styling for Next.js 16 → implemented with backdrop-blur.
 
 ---
 
@@ -65,9 +65,10 @@
 | 2026-05-12 | Discuss | decision: pricing approach | Request a Quote with scope descriptors. No prices shown. PRD + Ledger finalized. |
 | 2026-05-12 | Discuss | docs: BRIEF.md created    | Defined agency identity, Social-to-Site thesis, 3 target verticals, 3 services. |
 | 2026-05-12 | Discuss | feature: i18n added       | ID/EN language switcher added to Navbar. Next.js 16 i18n routing documented. |
+| 2026-05-12 | Dev | feat: Sprint 1 complete      | i18n architecture, Navbar, HeroSection, ValuePropsSection. Atomic Design. |
 
 ---
 
 ## 🚩 PM STATUS: GREEN
 
-**Next Immediate Step**: Transition to `/deck-code` to start implementing the project foundation.
+**Next Immediate Step**: Run `npm run dev` to verify Sprint 1, then proceed to Sprint 2 (The Deck Carousel).
