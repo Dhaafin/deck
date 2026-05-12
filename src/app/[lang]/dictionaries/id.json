@@ -60,5 +60,77 @@
       }
     ],
     "cta": "Mulai dengan layanan ini"
+  },
+  "process": {
+    "label": "Proses Kami",
+    "title": "Dari Konsep ke Peluncuran",
+    "subtitle": "Empat tahap terstruktur yang memastikan setiap pixel punya tujuan dan setiap interaksi terukur.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Audit & Discovery",
+        "description": "Kami mulai dengan memahami brand Anda secara mendalam — siapa audiens Anda, apa yang mereka rasakan di social media, dan di mana friction digital terjadi.",
+        "duration": "1 Minggu"
+      },
+      {
+        "number": "02",
+        "title": "Design & Prototype",
+        "description": "Moodboard, wireframe, dan prototipe high-fidelity. Anda melihat dan merasakan website Anda sebelum satu baris kode pun ditulis.",
+        "duration": "1–2 Minggu"
+      },
+      {
+        "number": "03",
+        "title": "Engineering",
+        "description": "Pembangunan dengan Next.js, dioptimalkan untuk 60fps motion dan kecepatan mobile. Setiap komponen diuji performanya.",
+        "duration": "2–3 Minggu"
+      },
+      {
+        "number": "04",
+        "title": "Launch & Handoff",
+        "description": "Quality assurance final, optimasi SEO, dan peluncuran. Kami serahkan aset lengkap beserta dokumentasi teknis.",
+        "duration": "1 Minggu"
+      }
+    ]
+  },
+  "quote": {
+    "label": "Mulai Proyek",
+    "title": "Ceritakan Visi Anda",
+    "subtitle": "Isi form di bawah ini dan kami akan menghubungi Anda dalam 24 jam kerja dengan proposal custom.",
+    "form": {
+      "name": "Nama Lengkap",
+      "email": "Email",
+      "brand": "Nama Brand / Bisnis",
+      "projectType": "Tipe Proyek",
+      "projectTypes": {
+        "microsite": "Atmospheric Microsite",
+        "engine": "Direct-Conversion Engine",
+        "audit": "Digital Audit & Strategy",
+        "other": "Lainnya"
+      },
+      "scope": "Cakupan Proyek",
+      "scopes": {
+        "small": "1–3 Halaman",
+        "medium": "4–8 Halaman",
+        "large": "Full E-Commerce",
+        "unsure": "Belum Yakin"
+      },
+      "message": "Ceritakan sedikit tentang proyek Anda",
+      "submit": "Kirim Permintaan",
+      "sending": "Mengirim...",
+      "success": "Terima kasih! Kami akan segera menghubungi Anda."
+    }
+  },
+  "footer": {
+    "brand": "deck",
+    "tagline": "Seamless Digital Transitions untuk brand social-first di Indonesia.",
+    "nav": {
+      "services": "Layanan",
+      "process": "Proses",
+      "contact": "Kontak"
+    },
+    "social": {
+      "title": "Ikuti Kami"
+    },
+    "copyright": "© 2026 Deck. Hak cipta dilindungi."
   }
 }

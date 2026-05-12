@@ -28,20 +28,21 @@
 | M1  | Project Foundation       | [Complete] | 2026-05-13 | Setup Design System, Style Guide, and PRD.    |
 | M2  | Hero & Brand Identity    | [Complete] | 2026-05-15 | Built Navbar, Hero, ValueProps (Sprint 1).    |
 | M3  | Showcase & Portfolio     | [Complete] | 2026-05-18 | Built DeckSection carousel (Sprint 2).        |
-| M4  | Sales & Process Sections | [Pending]  | 2026-05-20 | Pricing, Process, and Conversion sections.    |
+| M4  | Sales & Process Sections | [Complete] | 2026-05-20 | Process, Quote form, Footer (Sprint 3).       |
 | M5  | Polishing & Launch       | [Pending]  | 2026-05-22 | Final animations, SEO, and performance check. |
 
 ---
 
 ## 🛠️ ACTIVE FEATURE
 
-**Feature**: Sprint 3 — Process, Request a Quote, Footer
+**Feature**: Sprint 4 — Polishing & Launch
 **Checklist**:
 
-- [ ] Build `ProcessSection` organism (Audit → Design → Build → Launch vertical timeline).
-- [ ] Build `QuoteSection` organism (Request a Quote form with project type selector).
-- [ ] Build `Footer` organism (Minimal, clean, with social links).
-- [ ] Add Sprint 3 i18n copy to both locale files.
+- [ ] Full visual QA pass (`npm run dev` — verify all sections, both locales).
+- [ ] SEO: Verify metadata, heading hierarchy, semantic HTML.
+- [ ] Performance: Audit Lighthouse score, optimize images/fonts.
+- [ ] Responsive: Test mobile (320px), tablet (768px), desktop (1440px).
+- [ ] Final motion polish: Ensure all animations feel cohesive.
 
 ---
 
@@ -67,9 +68,10 @@
 | 2026-05-12 | Discuss | feature: i18n added          | ID/EN language switcher added to Navbar. Next.js 16 i18n routing documented.     |
 | 2026-05-12 | Dev     | feat: Sprint 1 complete      | i18n architecture, Navbar, HeroSection, ValuePropsSection. Atomic Design.        |
 | 2026-05-12 | Dev     | feat: Sprint 2 complete      | DeckSection with 3D tilt cards, TagBadge atom, service copy (ID/EN).             |
+| 2026-05-12 | Dev     | feat: Sprint 3 complete      | ProcessSection timeline, QuoteSection form, Footer. Full i18n copy (ID/EN).      |
 
 ---
 
 ## 🚩 PM STATUS: GREEN
 
-**Next Immediate Step**: Proceed to Sprint 3 — Process timeline, Request a Quote form, and Footer.
+**Next Immediate Step**: Run `npm run dev` to verify all sections. Then Sprint 4 — visual QA and polishing pass.

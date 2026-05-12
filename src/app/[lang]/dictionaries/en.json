@@ -60,5 +60,77 @@
       }
     ],
     "cta": "Start with this service"
+  },
+  "process": {
+    "label": "Our Process",
+    "title": "From Concept to Launch",
+    "subtitle": "Four structured phases ensuring every pixel has purpose and every interaction is measured.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Audit & Discovery",
+        "description": "We start by deeply understanding your brand — who your audience is, what they feel on social media, and where digital friction occurs.",
+        "duration": "1 Week"
+      },
+      {
+        "number": "02",
+        "title": "Design & Prototype",
+        "description": "Moodboards, wireframes, and high-fidelity prototypes. You see and feel your website before a single line of code is written.",
+        "duration": "1–2 Weeks"
+      },
+      {
+        "number": "03",
+        "title": "Engineering",
+        "description": "Built with Next.js, optimized for 60fps motion and mobile speed. Every component is performance-tested.",
+        "duration": "2–3 Weeks"
+      },
+      {
+        "number": "04",
+        "title": "Launch & Handoff",
+        "description": "Final QA, SEO optimization, and launch. We hand over complete assets with full technical documentation.",
+        "duration": "1 Week"
+      }
+    ]
+  },
+  "quote": {
+    "label": "Start a Project",
+    "title": "Tell Us Your Vision",
+    "subtitle": "Fill out the form below and we'll get back to you within 24 business hours with a custom proposal.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "brand": "Brand / Business Name",
+      "projectType": "Project Type",
+      "projectTypes": {
+        "microsite": "Atmospheric Microsite",
+        "engine": "Direct-Conversion Engine",
+        "audit": "Digital Audit & Strategy",
+        "other": "Other"
+      },
+      "scope": "Project Scope",
+      "scopes": {
+        "small": "1–3 Pages",
+        "medium": "4–8 Pages",
+        "large": "Full E-Commerce",
+        "unsure": "Not Sure Yet"
+      },
+      "message": "Tell us a bit about your project",
+      "submit": "Submit Request",
+      "sending": "Sending...",
+      "success": "Thank you! We'll be in touch shortly."
+    }
+  },
+  "footer": {
+    "brand": "deck",
+    "tagline": "Seamless Digital Transitions for social-first brands in Indonesia.",
+    "nav": {
+      "services": "Services",
+      "process": "Process",
+      "contact": "Contact"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "© 2026 Deck. All rights reserved."
   }
 }
