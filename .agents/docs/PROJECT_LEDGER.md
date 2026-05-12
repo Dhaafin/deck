@@ -9,6 +9,7 @@
 **Vision**: A high-conversion "Selling Deck" website for a specialized digital creative studio that bridges Social Media Branding and High-Conversion Digital Experiences for Indonesian Social-First DTC brands. The site IS the proof of concept.
 
 **Core Constraints**:
+
 - **Stack**: Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion.
 - **Vibe**: Light Mode, Luxury, Precision Tech. BMW M1000RR-inspired palette.
 - **Color Palette**: Alpine White (Base), Motorsport Blue & Racing Red (Accents, Sparingly).
@@ -22,26 +23,25 @@
 
 ## 🗺️ MILESTONE ROADMAP
 
-| ID  | Milestone                  | Status     | Due Date   | Details                                      |
-| :-- | :------------------------- | :--------: | :--------: | :------------------------------------------- |
-| M1  | Project Foundation         | [Complete] | 2026-05-13 | Setup Design System, Style Guide, and PRD.   |
-| M2  | Hero & Brand Identity      | [Pending]  | 2026-05-15 | Build the high-impact Hero section.          |
-| M3  | Showcase & Portfolio       | [Pending]  | 2026-05-18 | Implement interactive website previews.       |
-| M4  | Sales & Process Sections   | [Pending]  | 2026-05-20 | Pricing, Process, and Conversion sections.   |
-| M5  | Polishing & Launch         | [Pending]  | 2026-05-22 | Final animations, SEO, and performance check. |
+| ID  | Milestone                |   Status   |  Due Date  | Details                                       |
+| :-- | :----------------------- | :--------: | :--------: | :-------------------------------------------- |
+| M1  | Project Foundation       | [Complete] | 2026-05-13 | Setup Design System, Style Guide, and PRD.    |
+| M2  | Hero & Brand Identity    | [Complete] | 2026-05-15 | Built Navbar, Hero, ValueProps (Sprint 1).    |
+| M3  | Showcase & Portfolio     | [Complete] | 2026-05-18 | Built DeckSection carousel (Sprint 2).        |
+| M4  | Sales & Process Sections | [Pending]  | 2026-05-20 | Pricing, Process, and Conversion sections.    |
+| M5  | Polishing & Launch       | [Pending]  | 2026-05-22 | Final animations, SEO, and performance check. |
 
 ---
 
 ## 🛠️ ACTIVE FEATURE
 
-**Feature**: Sprint 1 — Navbar, Hero, Value Props
+**Feature**: Sprint 3 — Process, Request a Quote, Footer
 **Checklist**:
-- [x] Install Framer Motion (`npm install framer-motion`).
-- [x] Configure Tailwind 4 `@theme` with M-Performance color tokens (OKLCH).
-- [x] Setup Google Fonts (Plus Jakarta Sans) in `layout.tsx`.
-- [x] Build `Navbar` organism (Glassmorphism, sticky, Framer scroll effect).
-- [x] Build `Hero` organism (HeroHeadline, HeroSubtext, HeroCTA, FloatingCard).
-- [x] Build `ValueProps` organism (StatCards: Lighthouse 100, < 1s load, 3 revisions).
+
+- [ ] Build `ProcessSection` organism (Audit → Design → Build → Launch vertical timeline).
+- [ ] Build `QuoteSection` organism (Request a Quote form with project type selector).
+- [ ] Build `Footer` organism (Minimal, clean, with social links).
+- [ ] Add Sprint 3 i18n copy to both locale files.
 
 ---
 
@@ -55,20 +55,21 @@
 
 ## 📋 CHRONOLOGICAL ACTIVITY LOG
 
-| Date       | Role | Commit / Action              | Description                           |
-| :--------- | :--- | :--------------------------- | :------------------------------------ |
-| 2026-05-12 |  PM  | init: project ledger created | PM system initialized manually.       |
-| 2026-05-12 | Discuss | docs: PRD created         | Defined core features, tech stack, and user stories. |
-| 2026-05-12 | Discuss | docs: Tech Stack Guide    | Created mandatory rules for Next.js 16 and Tailwind v4. |
-| 2026-05-12 | Discuss | architecture: Atomic Design| Implemented Atomic Design and strict Tailwind/Framer rules. |
-| 2026-05-12 | Discuss | decision: Deck carousel    | Chose freeform carousel of site-types (Agency, SaaS, etc.) over template tiers. |
-| 2026-05-12 | Discuss | decision: pricing approach | Request a Quote with scope descriptors. No prices shown. PRD + Ledger finalized. |
-| 2026-05-12 | Discuss | docs: BRIEF.md created    | Defined agency identity, Social-to-Site thesis, 3 target verticals, 3 services. |
-| 2026-05-12 | Discuss | feature: i18n added       | ID/EN language switcher added to Navbar. Next.js 16 i18n routing documented. |
-| 2026-05-12 | Dev | feat: Sprint 1 complete      | i18n architecture, Navbar, HeroSection, ValuePropsSection. Atomic Design. |
+| Date       | Role    | Commit / Action              | Description                                                                      |
+| :--------- | :------ | :--------------------------- | :------------------------------------------------------------------------------- |
+| 2026-05-12 | PM      | init: project ledger created | PM system initialized manually.                                                  |
+| 2026-05-12 | Discuss | docs: PRD created            | Defined core features, tech stack, and user stories.                             |
+| 2026-05-12 | Discuss | docs: Tech Stack Guide       | Created mandatory rules for Next.js 16 and Tailwind v4.                          |
+| 2026-05-12 | Discuss | architecture: Atomic Design  | Implemented Atomic Design and strict Tailwind/Framer rules.                      |
+| 2026-05-12 | Discuss | decision: Deck carousel      | Chose freeform carousel of site-types (Agency, SaaS, etc.) over template tiers.  |
+| 2026-05-12 | Discuss | decision: pricing approach   | Request a Quote with scope descriptors. No prices shown. PRD + Ledger finalized. |
+| 2026-05-12 | Discuss | docs: BRIEF.md created       | Defined agency identity, Social-to-Site thesis, 3 target verticals, 3 services.  |
+| 2026-05-12 | Discuss | feature: i18n added          | ID/EN language switcher added to Navbar. Next.js 16 i18n routing documented.     |
+| 2026-05-12 | Dev     | feat: Sprint 1 complete      | i18n architecture, Navbar, HeroSection, ValuePropsSection. Atomic Design.        |
+| 2026-05-12 | Dev     | feat: Sprint 2 complete      | DeckSection with 3D tilt cards, TagBadge atom, service copy (ID/EN).             |
 
 ---
 
 ## 🚩 PM STATUS: GREEN
 
-**Next Immediate Step**: Run `npm run dev` to verify Sprint 1, then proceed to Sprint 2 (The Deck Carousel).
+**Next Immediate Step**: Proceed to Sprint 3 — Process timeline, Request a Quote form, and Footer.

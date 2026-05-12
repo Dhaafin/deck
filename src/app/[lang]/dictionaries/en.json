@@ -28,5 +28,37 @@
       "label": "Social-to-Site",
       "desc": "Purpose-built for Instagram & TikTok in-app browsers. From swipe up straight to checkout."
     }
+  },
+  "deck": {
+    "label": "Our Services",
+    "title": "The Right Solution for Your Brand",
+    "subtitle": "Every brand has different needs. Choose the service that fits your digital growth stage.",
+    "cards": [
+      {
+        "id": "microsite",
+        "title": "Atmospheric Microsite",
+        "tagline": "Make every first impression count.",
+        "description": "High-fidelity landing pages purpose-built for product drops, campaigns, or brand stories. One page, one focus, maximum impact.",
+        "features": ["Single Page", "Premium Motion", "Mobile-First"],
+        "accent": "blue"
+      },
+      {
+        "id": "engine",
+        "title": "Direct-Conversion Engine",
+        "tagline": "Built to convert, designed to retain.",
+        "description": "Custom e-commerce storefronts optimized for the Indonesian payment landscape (Xendit/Midtrans) with extreme mobile speed.",
+        "features": ["E-Commerce", "Payment Gateway", "Speed Optimized"],
+        "accent": "red"
+      },
+      {
+        "id": "audit",
+        "title": "Digital Audit & Strategy",
+        "tagline": "Not sure where to start? Start here.",
+        "description": "A consultative deep-dive into your brand's digital friction points, delivered via a high-fidelity video report with an actionable roadmap.",
+        "features": ["Consultation", "Video Report", "Action Plan"],
+        "accent": "neutral"
+      }
+    ],
+    "cta": "Start with this service"
   }
 }

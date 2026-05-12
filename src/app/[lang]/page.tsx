@@ -3,6 +3,7 @@ import { getDictionary, hasLocale } from "./dictionaries";
 import type { Locale } from "./dictionaries";
 import { HeroSection } from "@/components/organisms/HeroSection";
 import { ValuePropsSection } from "@/components/organisms/ValuePropsSection";
+import { DeckSection } from "@/components/organisms/DeckSection";
 
 export default async function Home({
   params,
@@ -19,6 +20,7 @@ export default async function Home({
     <>
       <HeroSection dictionary={dict.hero} lang={lang as "id" | "en"} />
       <ValuePropsSection dictionary={dict.values} />
+      <DeckSection dictionary={dict.deck} lang={lang as "id" | "en"} />
     </>
   );
 }

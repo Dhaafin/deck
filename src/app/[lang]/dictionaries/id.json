@@ -28,5 +28,37 @@
       "label": "Social-to-Site",
       "desc": "Dioptimalkan khusus untuk in-app browser Instagram & TikTok. Dari swipe up langsung ke checkout."
     }
+  },
+  "deck": {
+    "label": "Layanan Kami",
+    "title": "Solusi yang Tepat untuk Brand Anda",
+    "subtitle": "Setiap brand punya kebutuhan yang berbeda. Pilih layanan yang paling sesuai dengan tahap pertumbuhan digital Anda.",
+    "cards": [
+      {
+        "id": "microsite",
+        "title": "Atmospheric Microsite",
+        "tagline": "Buat setiap first impression berkesan.",
+        "description": "Landing page berperforma tinggi yang dirancang khusus untuk product drop, kampanye, atau brand story. Satu halaman, satu fokus, dampak maksimal.",
+        "features": ["Single Page", "Motion Premium", "Mobile-First"],
+        "accent": "blue"
+      },
+      {
+        "id": "engine",
+        "title": "Direct-Conversion Engine",
+        "tagline": "Dibangun untuk konversi, didesain untuk retensi.",
+        "description": "Storefront e-commerce custom yang dioptimalkan untuk ekosistem pembayaran Indonesia (Xendit/Midtrans) dan kecepatan mobile yang ekstrem.",
+        "features": ["E-Commerce", "Payment Gateway", "Speed Optimized"],
+        "accent": "red"
+      },
+      {
+        "id": "audit",
+        "title": "Digital Audit & Strategy",
+        "tagline": "Belum yakin mulai dari mana? Mulai dari sini.",
+        "description": "Deep-dive konsultatif ke titik-titik friction digital brand Anda, disampaikan lewat video report berstandar tinggi beserta roadmap aksi.",
+        "features": ["Konsultasi", "Video Report", "Action Plan"],
+        "accent": "neutral"
+      }
+    ],
+    "cta": "Mulai dengan layanan ini"
   }
 }
