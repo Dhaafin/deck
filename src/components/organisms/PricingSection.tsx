@@ -64,11 +64,11 @@ export function PricingSection({ dictionary }: PricingSectionProps) {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch">
           
           {/* Gear Shifter Controls (Left) */}
-          <div className="lg:col-span-6 flex flex-col gap-6">
-            <div className="bg-cool-grey/30 border border-carbon/5 p-6 rounded-3xl relative">
+          <div className="lg:col-span-4 flex flex-col h-full">
+            <div className="bg-cool-grey/30 border border-carbon/5 p-6 rounded-3xl relative h-full flex flex-col justify-center">
               <h3 className="text-xs font-semibold tracking-widest uppercase text-carbon-light mb-8">
                 Select Gear
               </h3>
@@ -83,7 +83,7 @@ export function PricingSection({ dictionary }: PricingSectionProps) {
                     <button
                       key={tier.id}
                       onClick={() => setActiveGear(idx)}
-                      className={`relative flex items-center gap-6 group text-left w-full focus:outline-none`}
+                      className={`relative flex items-center gap-6 group text-left w-full focus:outline-none cursor-pointer`}
                     >
                       {/* Notch / Knob */}
                       <div className={`relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 transition-colors shadow-sm group-hover:border-m-red ${isActive ? 'border-white bg-cool-grey' : 'border-m-blue bg-m-blue/20'}`}>
@@ -113,9 +113,9 @@ export function PricingSection({ dictionary }: PricingSectionProps) {
           </div>
 
           {/* Performance Dashboard (Right) */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-8 h-full">
             <motion.div 
-              className="bg-carbon text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border border-white/10"
+              className="bg-carbon text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border border-white/10 h-full flex flex-col justify-center"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -125,7 +125,7 @@ export function PricingSection({ dictionary }: PricingSectionProps) {
               <div className="absolute top-0 right-0 w-96 h-96 bg-m-red/10 rounded-full blur-[100px] pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-96 h-96 bg-m-blue/10 rounded-full blur-[100px] pointer-events-none" />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
                 
                 {/* Speedometer Gauge */}
                 <div className="flex flex-col items-center justify-center">
