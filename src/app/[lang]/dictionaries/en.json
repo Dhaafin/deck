@@ -63,32 +63,50 @@
   },
   "process": {
     "label": "Our Process",
-    "title": "From Concept to Launch",
-    "subtitle": "Four structured phases ensuring every pixel has purpose and every interaction is measured.",
+    "title": "Project Performance Circuit",
+    "subtitle": "Scroll to see how your idea accelerates from the starting grid to public launch.",
     "steps": [
       {
         "number": "01",
-        "title": "Audit & Discovery",
-        "description": "We start by deeply understanding your brand — who your audience is, what they feel on social media, and where digital friction occurs.",
-        "duration": "1 Week"
+        "title": "Discovery & Briefing",
+        "duration": "Start Grid",
+        "description": "Deep discussion sessions to map business goals, sitemap structures, and visual moodboards."
       },
       {
         "number": "02",
-        "title": "Design & Prototype",
-        "description": "Moodboards, wireframes, and high-fidelity prototypes. You see and feel your website before a single line of code is written.",
-        "duration": "1–2 Weeks"
+        "title": "Interactive Prototyping",
+        "duration": "Sector 1",
+        "description": "We design directly in code on a private staging server. Watch high-fidelity layouts come alive early."
       },
       {
         "number": "03",
-        "title": "Engineering",
-        "description": "Built with Next.js, optimized for 60fps motion and mobile speed. Every component is performance-tested.",
-        "duration": "2–3 Weeks"
+        "title": "Visual Lock & Review",
+        "duration": "Revision 1",
+        "description": "Evaluate layouts and responsiveness on staging. We refine and lock visuals before coding backend systems."
       },
       {
         "number": "04",
-        "title": "Launch & Handoff",
-        "description": "Final QA, SEO optimization, and launch. We hand over complete assets with full technical documentation.",
-        "duration": "1 Week"
+        "title": "Functional Build",
+        "duration": "Sector 2",
+        "description": "Wiring functional engines, connecting dynamic CMS, databases, and executing performance optimization."
+      },
+      {
+        "number": "05",
+        "title": "Pre-Flight Inspection",
+        "duration": "Revision 2",
+        "description": "End-to-end functionality checks, bilingual copywriting adjustments, and search engine optimization."
+      },
+      {
+        "number": "06",
+        "title": "Launch & Tuning",
+        "duration": "Finish Line",
+        "description": "Connecting custom domains, deploying secure SSL certificates, and going live to the public."
+      },
+      {
+        "number": "07",
+        "title": "Lifetime Support",
+        "duration": "Pit Stop",
+        "description": "Post-launch speed monitoring, periodic database backups, security patches, and minor updates."
       }
     ]
   },

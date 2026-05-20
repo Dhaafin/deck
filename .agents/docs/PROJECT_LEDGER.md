@@ -76,6 +76,13 @@
 | 2026-05-20 | Dev     | style: adjust PricingSection | Updated grid to 50/50 split and styled inactive gear knobs to blue. |
 | 2026-05-20 | Dev     | style: refine PricingSection layout & translate | Reverted ratio to 4/8, made heights equal, set pointer cursor, and translated Indonesian CTA. |
 | 2026-05-20 | Dev     | fix: resolve HeroSection TS and linter warnings | Typed variants with as const and updated styling to match Tailwind v4 patterns. |
+| 2026-05-20 | Discuss | discussion: process flow refactor | Evaluated agency client process workflow and discussed industry best practices. |
+| 2026-05-20 | Discuss | discussion: hybrid dev-design flow | Analyzed design-in-code workflow positioning and proposed interactive prototyping. |
+| 2026-05-20 | Discuss | planning: racetrack process section | Created implementation plan for Motorsport GP racetrack process flow section. |
+| 2026-05-20 | Discuss | discussion: process section concept pivot | Proposed luxury audio mixing deck and Swiss watchmaker concept ideas. |
+| 2026-05-20 | Discuss | discussion: layout refactor | Discussed layout variety and proposed horizontal track, stacked deck, and radial dial. |
+| 2026-05-20 | Discuss | planning: horizontal scroll process | Created implementation plan for Horizontal Scroll Assembly Line layout. |
+| 2026-05-20 | Dev     | feat: interactive process horizontal layout | Rebuilt ProcessSection using framer-motion sticky scroll map and 7-step translation. |
 
 
 

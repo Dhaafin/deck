@@ -62,33 +62,51 @@
     "cta": "Mulai dengan layanan ini"
   },
   "process": {
-    "label": "Proses Kami",
-    "title": "Dari Konsep ke Peluncuran",
-    "subtitle": "Empat tahap terstruktur yang memastikan setiap pixel punya tujuan dan setiap interaksi terukur.",
+    "label": "Alur Kerja",
+    "title": "Sirkuit Pengerjaan Proyek",
+    "subtitle": "Scroll untuk melihat bagaimana ide Anda dipacu dari garis start hingga peluncuran resmi.",
     "steps": [
       {
         "number": "01",
-        "title": "Audit & Discovery",
-        "description": "Kami mulai dengan memahami brand Anda secara mendalam — siapa audiens Anda, apa yang mereka rasakan di social media, dan di mana friction digital terjadi.",
-        "duration": "1 Minggu"
+        "title": "Discovery & Briefing",
+        "duration": "Fase Start",
+        "description": "Sesi diskusi mendalam untuk memetakan tujuan bisnis, sitemap situs, dan arah visual moodboard."
       },
       {
         "number": "02",
-        "title": "Design & Prototype",
-        "description": "Moodboard, wireframe, dan prototipe high-fidelity. Anda melihat dan merasakan website Anda sebelum satu baris kode pun ditulis.",
-        "duration": "1–2 Minggu"
+        "title": "Interactive Prototyping",
+        "duration": "Sektor 1",
+        "description": "Desain langsung dilakukan dalam kode pada link staging rahasia. Klien bisa memantau visual yang hidup sejak dini."
       },
       {
         "number": "03",
-        "title": "Engineering",
-        "description": "Pembangunan dengan Next.js, dioptimalkan untuk 60fps motion dan kecepatan mobile. Setiap komponen diuji performanya.",
-        "duration": "2–3 Minggu"
+        "title": "Visual Lock & Review",
+        "duration": "Revisi 1",
+        "description": "Evaluasi visual interaktif di link staging. Desain disempurnakan dan dikunci sebelum fungsi backend dirakit."
       },
       {
         "number": "04",
-        "title": "Launch & Handoff",
-        "description": "Quality assurance final, optimasi SEO, dan peluncuran. Kami serahkan aset lengkap beserta dokumentasi teknis.",
-        "duration": "1 Minggu"
+        "title": "Functional Build",
+        "duration": "Sektor 2",
+        "description": "Pemasangan mesin fungsional website, integrasi CMS dinamis, database, dan optimasi performa."
+      },
+      {
+        "number": "05",
+        "title": "Pre-Flight Inspection",
+        "duration": "Revisi 2",
+        "description": "Tes fungsi akhir secara menyeluruh, penyesuaian copywriting dwibahasa, dan optimasi SEO."
+      },
+      {
+        "number": "06",
+        "title": "Launch & Tuning",
+        "duration": "Garis Finish",
+        "description": "Penyambungan domain kustom, instalasi sertifikat SSL (HTTPS) aman, dan publikasi website ke publik."
+      },
+      {
+        "number": "07",
+        "title": "Lifetime Support",
+        "duration": "Pit Stop",
+        "description": "Pemantauan kecepatan berkala, backup database rutin, keamanan sistem, dan update konten minor bulanan."
       }
     ]
   },

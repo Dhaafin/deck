@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 interface StepData {
   number: string;
@@ -18,130 +19,92 @@ interface ProcessSectionProps {
   };
 }
 
-const accentColors = [
-  { dot: "bg-m-blue", line: "from-m-blue/40 to-m-blue/10", badge: "text-m-blue bg-m-blue/8 border-m-blue/15" },
-  { dot: "bg-m-red", line: "from-m-red/40 to-m-red/10", badge: "text-m-red bg-m-red/8 border-m-red/15" },
-  { dot: "bg-m-blue", line: "from-m-blue/40 to-m-blue/10", badge: "text-m-blue bg-m-blue/8 border-m-blue/15" },
-  { dot: "bg-carbon/40", line: "from-carbon/20 to-carbon/5", badge: "text-carbon-light bg-carbon/5 border-carbon/10" },
-];
+export function ProcessSection({ dictionary }: ProcessSectionProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  // Track vertical scroll progress within the 400vh container
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
 
-function StepItem({
-  step,
-  index,
-  isLast,
-}: {
-  step: StepData;
-  index: number;
-  isLast: boolean;
-}) {
-  const accent = accentColors[index % accentColors.length];
+  // Map vertical scroll progress to horizontal translation.
+  // 100vw padding on right ensures it stops exactly at the end.
+  const xTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "calc(-100% + 100vw)"]);
 
   return (
-    <motion.div
-      className="relative flex gap-6 md:gap-8"
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
-    >
-      {/* Timeline column */}
-      <div className="flex flex-col items-center shrink-0">
-        {/* Number circle */}
-        <motion.div
-          className={`relative w-12 h-12 rounded-full flex items-center justify-center border-2 border-carbon/10 bg-alpine-white z-10`}
-          whileInView={{ scale: [0.8, 1.05, 1] }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.15 + 0.2 }}
-        >
-          <span className="text-sm font-extrabold tracking-tight text-carbon">
-            {step.number}
-          </span>
-          {/* Active dot */}
-          <div
-            className={`absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full ${accent.dot} border-2 border-alpine-white`}
-          />
-        </motion.div>
-
-        {/* Connecting line */}
-        {!isLast && (
-          <div
-            className={`w-[2px] flex-1 min-h-[60px] bg-gradient-to-b ${accent.line}`}
-          />
-        )}
-      </div>
-
-      {/* Content */}
-      <div className={`flex flex-col gap-3 ${isLast ? "pb-0" : "pb-12"}`}>
-        <div className="flex items-center gap-3 flex-wrap">
-          <h3 className="text-xl font-bold tracking-[-0.02em] text-carbon">
-            {step.title}
-          </h3>
-          <span
-            className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold tracking-wider uppercase border ${accent.badge}`}
-          >
-            {step.duration}
-          </span>
+    <section ref={containerRef} id="process" className="relative h-[400vh] bg-carbon">
+      {/* Sticky container that stays fixed while scrolling the 400vh */}
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-center bg-carbon text-white">
+        
+        {/* Background Grid Accent */}
+        <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
+          <div className="w-full h-full" style={{ backgroundImage: 'linear-gradient(90deg, #fff 1px, transparent 1px), linear-gradient(180deg, #fff 1px, transparent 1px)', backgroundSize: '64px 64px' }} />
         </div>
 
-        <p className="text-sm text-carbon-light leading-relaxed max-w-md">
-          {step.description}
-        </p>
-      </div>
-    </motion.div>
-  );
-}
+        {/* Laser Scanner Line (Center screen visual) */}
+        <div className="absolute left-1/2 top-[15%] bottom-[15%] w-[1px] bg-linear-to-b from-transparent via-m-red to-transparent opacity-50 shadow-[0_0_20px_rgba(227,6,19,1)] -translate-x-1/2 pointer-events-none z-0 hidden md:block" />
 
-export function ProcessSection({ dictionary }: ProcessSectionProps) {
-  return (
-    <section id="process" className="py-32 px-6">
-      <div className="max-w-[1200px] mx-auto">
-        {/* Section header */}
-        <div className="flex flex-col gap-4 mb-16 max-w-2xl">
-          <motion.div
-            className="flex items-center gap-3"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+        {/* Section Header */}
+        <div className="absolute top-12 md:top-24 left-6 md:left-24 z-20 max-w-xl pointer-events-none">
+          <div className="flex items-center gap-3 mb-4">
             <div className="h-[2px] w-8 bg-m-red" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-carbon-light">
+            <span className="text-xs font-semibold tracking-widest uppercase text-white/50">
               {dictionary.label}
             </span>
-          </motion.div>
-
-          <motion.h2
-            className="text-3xl sm:text-4xl font-extrabold tracking-[-0.03em] text-carbon"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-[-0.03em] mb-4">
             {dictionary.title}
-          </motion.h2>
-
-          <motion.p
-            className="text-lg text-carbon-light leading-relaxed"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          </h2>
+          <p className="text-sm md:text-base text-white/60 leading-relaxed max-w-sm">
             {dictionary.subtitle}
-          </motion.p>
+          </p>
         </div>
 
-        {/* Timeline */}
-        <div className="max-w-2xl ml-0 md:ml-16">
-          {dictionary.steps.map((step, index) => (
-            <StepItem
-              key={step.number}
-              step={step}
-              index={index}
-              isLast={index === dictionary.steps.length - 1}
-            />
-          ))}
+        {/* Horizontal Track Container */}
+        <div className="relative w-full h-full flex items-center pt-24 md:pt-32">
+          <motion.div 
+            style={{ x: xTranslate }}
+            className="flex items-center gap-6 md:gap-16 px-6 md:pl-[50vw] md:pr-[50vw] h-auto"
+          >
+            {dictionary.steps.map((step) => (
+              <div 
+                key={step.number} 
+                className="relative w-[85vw] md:w-[450px] shrink-0 h-[400px] flex flex-col justify-between bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-10 rounded-3xl shadow-2xl transition-all duration-500 hover:border-m-red/50 hover:bg-white/10 group cursor-default"
+              >
+                {/* Number & Duration Badge */}
+                <div className="flex justify-between items-start">
+                  <span className="text-7xl font-extrabold text-white/10 group-hover:text-white/20 transition-colors tracking-tighter">
+                    {step.number}
+                  </span>
+                  <span className="inline-flex items-center px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase border border-white/10 bg-white/5 text-white/70 group-hover:border-m-red/30 group-hover:text-m-red transition-colors">
+                    {step.duration}
+                  </span>
+                </div>
+                
+                {/* Content */}
+                <div className="mt-8">
+                  <h3 className="text-2xl font-bold tracking-tight text-white mb-4 group-hover:text-m-red transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-white/60 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+                
+                {/* Subtle racing stripe on hover */}
+                <div className="absolute bottom-0 left-0 w-0 h-1 bg-m-red transition-all duration-700 ease-out group-hover:w-full rounded-b-3xl" />
+              </div>
+            ))}
+          </motion.div>
         </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-60">
+          <span className="text-[10px] font-semibold tracking-widest uppercase text-white">Scroll to Explore</span>
+          <div className="w-[1px] h-12 bg-linear-to-b from-white via-white/50 to-transparent" />
+        </div>
+
       </div>
     </section>
   );
