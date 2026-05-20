@@ -83,6 +83,7 @@
 | 2026-05-20 | Discuss | discussion: layout refactor | Discussed layout variety and proposed horizontal track, stacked deck, and radial dial. |
 | 2026-05-20 | Discuss | planning: horizontal scroll process | Created implementation plan for Horizontal Scroll Assembly Line layout. |
 | 2026-05-20 | Dev     | feat: interactive process horizontal layout | Rebuilt ProcessSection using framer-motion sticky scroll map and 7-step translation. |
+| 2026-05-20 | Dev     | fix: resolve horizontal scroll teleport & UI polish | Replaced static calc string with dynamic useTransform function to fix teleporting. Replaced duration pills with Lucide icons and updated scroll indicator. |
 
 
 
