@@ -130,25 +130,49 @@
         "id": "tier-1",
         "name": "Personal / Starter",
         "price": "500k",
-        "features": ["Portfolio", "High Fidelity Landing Pages", "Company Profile"]
+        "features": [
+          "1-Page Responsive Layout",
+          "High-Fidelity & Clean Design",
+          "Standard Contact Form",
+          "Link-in-Bio Integration",
+          "Free Deployment Setup (Vercel)"
+        ]
       },
       {
         "id": "tier-2",
         "name": "Professional",
         "price": "1.0M",
-        "features": ["Multi Page Portfolio", "Dynamic CMS"]
+        "features": [
+          "Up to 5 Custom Pages",
+          "Dynamic CMS Integration",
+          "Framer Motion Animations",
+          "Guaranteed 90+ Lighthouse Score",
+          "Custom Domain Setup"
+        ]
       },
       {
         "id": "tier-3",
         "name": "Business E-Commerce",
         "price": "5.0M+",
-        "features": ["DTC E-Commerce", "Operational Booking & Scheduling"]
+        "features": [
+          "Unlimited Products",
+          "Payment Gateway (Midtrans)",
+          "Automated Shipping Rates",
+          "WhatsApp Checkout Option",
+          "Order Dashboard"
+        ]
       },
       {
         "id": "tier-4",
         "name": "Enterprise Custom",
         "price": "Custom",
-        "features": ["Custom Web App", "Desktop Software", "Mobile App"]
+        "features": [
+          "Custom App Architecture",
+          "Tailored Database & API",
+          "Enterprise-Grade Security",
+          "Complex 3rd Party Integrations",
+          "Dedicated Technical Support"
+        ]
       }
     ]
   },

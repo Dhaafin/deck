@@ -130,25 +130,49 @@
         "id": "tier-1",
         "name": "Personal / Starter",
         "price": "500k",
-        "features": ["Portfolio", "High Fidelity Landing Pages", "Company Profile"]
+        "features": [
+          "1 Halaman Landing Page (Responsive)",
+          "Desain High-Fidelity & Clean Layout",
+          "Formulir Kontak Standard",
+          "Integrasi Link-in-Bio",
+          "Panduan Setup (Vercel)"
+        ]
       },
       {
         "id": "tier-2",
         "name": "Professional",
         "price": "1.0M",
-        "features": ["Multi Page Portfolio", "Dynamic CMS"]
+        "features": [
+          "Hingga 5 Halaman Custom",
+          "Integrasi Dynamic CMS",
+          "Framer Motion Animations",
+          "Lighthouse Speed 90+",
+          "Setup Custom Domain"
+        ]
       },
       {
         "id": "tier-3",
         "name": "Business E-Commerce",
         "price": "5.0M+",
-        "features": ["DTC E-Commerce", "Operational Booking & Scheduling"]
+        "features": [
+          "Produk Unlimited",
+          "Payment Gateway (Midtrans)",
+          "Kalkulator Ongkos Kirim",
+          "WhatsApp Checkout Option",
+          "Dashboard Pesanan"
+        ]
       },
       {
         "id": "tier-4",
         "name": "Enterprise Custom",
         "price": "Custom",
-        "features": ["Custom Web App", "Desktop Software", "Mobile App"]
+        "features": [
+          "Arsitektur Custom App",
+          "Database & API Khusus",
+          "Keamanan Enterprise",
+          "Integrasi 3rd Party API",
+          "Dukungan Teknis Khusus"
+        ]
       }
     ]
   },
