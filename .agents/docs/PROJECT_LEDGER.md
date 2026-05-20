@@ -86,6 +86,7 @@
 | 2026-05-20 | Dev     | fix: resolve horizontal scroll teleport & UI polish | Replaced static calc string with dynamic useTransform function to fix teleporting. Replaced duration pills with Lucide icons and updated scroll indicator. |
 | 2026-05-20 | Dev     | feat: remove services section | Removed DeckSection (Layanan Kami) from home route and updated Navbar navigation links. |
 | 2026-05-20 | Dev     | feat: reposition ValuePropsSection below Hero | Swapped layout ordering of ValuePropsSection and PricingSection in bilingual routing. |
+| 2026-05-20 | Dev     | fix: resolve Button TS transition easing type | Fixed Button.tsx compilation error by casting Framer Motion transition type to 'spring' as const. |
 
 
 
