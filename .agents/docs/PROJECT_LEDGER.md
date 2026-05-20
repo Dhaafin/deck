@@ -75,6 +75,7 @@
 | 2026-05-20 | Discuss | discussion: package details | Proposed detailing features list in pricing tiers to clarify deliverables. |
 | 2026-05-20 | Dev     | style: adjust PricingSection | Updated grid to 50/50 split and styled inactive gear knobs to blue. |
 | 2026-05-20 | Dev     | style: refine PricingSection layout & translate | Reverted ratio to 4/8, made heights equal, set pointer cursor, and translated Indonesian CTA. |
+| 2026-05-20 | Dev     | fix: resolve HeroSection TS and linter warnings | Typed variants with as const and updated styling to match Tailwind v4 patterns. |
 
 
 

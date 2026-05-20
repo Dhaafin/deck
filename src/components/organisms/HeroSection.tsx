@@ -21,7 +21,7 @@ const floatingCardVariants = {
     rotateX: 0,
     transition: { duration: 0.8, ease: "easeOut", delay: 0.5 },
   },
-};
+} as const;
 
 const headlineVariants = {
   initial: { opacity: 0, y: 30 },
@@ -30,7 +30,7 @@ const headlineVariants = {
     y: 0,
     transition: { duration: 0.6, ease: "easeOut" },
   },
-};
+} as const;
 
 const subtextVariants = {
   initial: { opacity: 0, y: 20 },
@@ -39,7 +39,7 @@ const subtextVariants = {
     y: 0,
     transition: { duration: 0.6, ease: "easeOut", delay: 0.2 },
   },
-};
+} as const;
 
 const ctaVariants = {
   initial: { opacity: 0, y: 15 },
@@ -48,7 +48,7 @@ const ctaVariants = {
     y: 0,
     transition: { duration: 0.6, ease: "easeOut", delay: 0.4 },
   },
-};
+} as const;
 
 export function HeroSection({ dictionary, lang }: HeroSectionProps) {
   return (
@@ -112,13 +112,13 @@ export function HeroSection({ dictionary, lang }: HeroSectionProps) {
 
         {/* Right: Floating Card */}
         <motion.div
-          className="relative flex items-center justify-center perspective-[1200px]"
+          className="relative flex items-center justify-center perspective-distant"
           variants={floatingCardVariants}
           initial="initial"
           animate="animate"
         >
           <motion.div
-            className="relative w-full max-w-md aspect-[4/3] rounded-2xl overflow-hidden"
+            className="relative w-full max-w-md aspect-4/3 rounded-2xl overflow-hidden"
             animate={{ y: [0, -12, 0] }}
             transition={{
               duration: 5,
@@ -151,7 +151,7 @@ export function HeroSection({ dictionary, lang }: HeroSectionProps) {
               </div>
 
               {/* Racing stripe accent */}
-              <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-m-blue via-alpine-white to-m-red" />
+              <div className="absolute top-0 left-0 w-full h-[3px] bg-linear-to-r from-m-blue via-alpine-white to-m-red" />
             </div>
           </motion.div>
 
