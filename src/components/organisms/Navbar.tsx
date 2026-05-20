@@ -70,12 +70,6 @@ export function Navbar({ lang }: NavbarProps) {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href={`/${lang}#services`}
-              className="text-sm font-medium text-carbon-light hover:text-carbon transition-colors duration-300"
-            >
-              {t.services}
-            </a>
-            <a
               href={`/${lang}#process`}
               className="text-sm font-medium text-carbon-light hover:text-carbon transition-colors duration-300"
             >
@@ -134,13 +128,6 @@ export function Navbar({ lang }: NavbarProps) {
         transition={{ duration: 0.4, ease: "easeOut" }}
         style={{ pointerEvents: mobileOpen ? "auto" : "none" }}
       >
-        <a
-          href={`/${lang}#services`}
-          className="text-2xl font-bold text-carbon"
-          onClick={() => setMobileOpen(false)}
-        >
-          {t.services}
-        </a>
         <a
           href={`/${lang}#process`}
           className="text-2xl font-bold text-carbon"
