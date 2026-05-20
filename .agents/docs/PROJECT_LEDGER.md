@@ -69,6 +69,11 @@
 | 2026-05-12 | Dev     | feat: Sprint 1 complete      | i18n architecture, Navbar, HeroSection, ValuePropsSection. Atomic Design.        |
 | 2026-05-12 | Dev     | feat: Sprint 2 complete      | DeckSection with 3D tilt cards, TagBadge atom, service copy (ID/EN).             |
 | 2026-05-12 | Dev     | feat: Sprint 3 complete      | ProcessSection timeline, QuoteSection form, Footer. Full i18n copy (ID/EN).      |
+| 2026-05-20 | Discuss | discussion: pricing strategy | Evaluated price list proposal against luxury positioning and DTC brief. |
+| 2026-05-20 | Discuss | discussion: skill vs value  | Discussed developer skill level, pricing psychology, and adjusted pricing sweet spot. |
+| 2026-05-20 | Dev     | feat: add interactive PricingSection | Implemented Motorsport Gearbox pricing section and updated dictionaries. |
+
+
 
 ---
 

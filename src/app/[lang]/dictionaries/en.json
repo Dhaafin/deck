@@ -120,6 +120,38 @@
       "success": "Thank you! We'll be in touch shortly."
     }
   },
+  "pricing": {
+    "label": "Pricing & Packages",
+    "title": "Investment for Digital Growth",
+    "subtitle": "From a simple profile page to a complex e-commerce platform, choose the package that fits your vision.",
+    "cta": "Request a Quote",
+    "tiers": [
+      {
+        "id": "tier-1",
+        "name": "Personal / Starter",
+        "price": "500k",
+        "features": ["Portfolio", "High Fidelity Landing Pages", "Company Profile"]
+      },
+      {
+        "id": "tier-2",
+        "name": "Professional",
+        "price": "1.0M",
+        "features": ["Multi Page Portfolio", "Dynamic CMS"]
+      },
+      {
+        "id": "tier-3",
+        "name": "Business E-Commerce",
+        "price": "5.0M+",
+        "features": ["DTC E-Commerce", "Operational Booking & Scheduling"]
+      },
+      {
+        "id": "tier-4",
+        "name": "Enterprise Custom",
+        "price": "Custom",
+        "features": ["Custom Web App", "Desktop Software", "Mobile App"]
+      }
+    ]
+  },
   "footer": {
     "brand": "deck",
     "tagline": "Seamless Digital Transitions for social-first brands in Indonesia.",

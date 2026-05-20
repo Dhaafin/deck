@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
 import type { Locale } from "./dictionaries";
 import { HeroSection } from "@/components/organisms/HeroSection";
+import { PricingSection } from "@/components/organisms/PricingSection";
 import { ValuePropsSection } from "@/components/organisms/ValuePropsSection";
 import { DeckSection } from "@/components/organisms/DeckSection";
 import { ProcessSection } from "@/components/organisms/ProcessSection";
@@ -22,6 +23,7 @@ export default async function Home({
   return (
     <>
       <HeroSection dictionary={dict.hero} lang={lang as "id" | "en"} />
+      <PricingSection dictionary={dict.pricing} />
       <ValuePropsSection dictionary={dict.values} />
       <DeckSection dictionary={dict.deck} lang={lang as "id" | "en"} />
       <ProcessSection dictionary={dict.process} />
