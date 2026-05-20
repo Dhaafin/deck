@@ -22,8 +22,8 @@ export default async function Home({
   return (
     <>
       <HeroSection dictionary={dict.hero} lang={lang as "id" | "en"} />
-      <PricingSection dictionary={dict.pricing} />
       <ValuePropsSection dictionary={dict.values} />
+      <PricingSection dictionary={dict.pricing} />
       <ProcessSection dictionary={dict.process} />
       <QuoteSection dictionary={dict.quote} />
       <Footer dictionary={dict.footer} lang={lang as "id" | "en"} />
